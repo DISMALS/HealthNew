@@ -2,8 +2,8 @@
 require('angular');
 require('../node_modules/oclazyload/dist/ocLazyLoad.min');
 require('../node_modules/oclazyload/dist/ocLazyLoad.require.min');
-require('angular-ui-router');
-require('../node_modules/angular-ui-router/release/stateEvents.min'); //route event
+require('../node_modules/@uirouter/angularjs/release/angular-ui-router.min');
+require('../node_modules/@uirouter/angularjs/release/stateEvents.min'); //route event
 require('angular-cookies');
 require('angular-local-storage');
 require('angular-animate');
@@ -16,7 +16,7 @@ require('../node_modules/bootstrap/dist/js/bootstrap.min'); //drop down requires
 require('../node_modules/angular-sanitize/angular-sanitize.min'); //drop down requiresment
 require('../node_modules/ui-select/dist/select.min'); //drop down
 require('../node_modules/moment/locale/zh-cn'); //moment language
-require('../node_modules/angular-moment/angular-moment.min'); //angular moment
+// require('../node_modules/angular-moment/angular-moment.min'); //angular moment
 require('../node_modules/eonasdan-bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min');//日期控件
 require('../node_modules/jquery-ui/ui/widgets/draggable'); //draggable
 require('../node_modules/angular-ui-bootstrap/dist/ui-bootstrap'); //ui view

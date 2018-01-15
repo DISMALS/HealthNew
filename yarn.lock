@@ -6,9 +6,15 @@
   version "0.19.1"
   resolved "http://registry.npm.taobao.org/@std/esm/download/@std/esm-0.19.1.tgz#8bdf8ed0e759eea1c7010d22fb9789e462ec0a9b"
 
-"@uirouter/core@5.0.3":
-  version "5.0.3"
-  resolved "http://registry.npm.taobao.org/@uirouter/core/download/@uirouter/core-5.0.3.tgz#e2b5b1e45190e20c67ba4e15c013de5d4e0ccab3"
+"@uirouter/angularjs@^1.0.13":
+  version "1.0.13"
+  resolved "http://registry.npm.taobao.org/@uirouter/angularjs/download/@uirouter/angularjs-1.0.13.tgz#a63561d1177541f19b4231117d83ec49a5f19b90"
+  dependencies:
+    "@uirouter/core" "5.0.14"
+
+"@uirouter/core@5.0.14":
+  version "5.0.14"
+  resolved "http://registry.npm.taobao.org/@uirouter/core/download/@uirouter/core-5.0.14.tgz#621477f779886c9287fcc606a4082157fc0ffa65"
 
 abbrev@1:
   version "1.1.1"
@@ -61,6 +67,13 @@ ajv-keywords@^1.1.1:
 ajv-keywords@^2.1.0:
   version "2.1.1"
   resolved "http://registry.npm.taobao.org/ajv-keywords/download/ajv-keywords-2.1.1.tgz#617997fc5f60576894c435f940d819e135b80762"
+
+ajv@5.0.0:
+  version "5.0.0"
+  resolved "http://registry.npm.taobao.org/ajv/download/ajv-5.0.0.tgz#a2c717764e8036d15fd227b070ddaf7867ab413a"
+  dependencies:
+    co "^4.6.0"
+    json-stable-stringify "^1.0.1"
 
 ajv@^4.7.0, ajv@^4.9.1:
   version "4.11.8"
@@ -149,12 +162,6 @@ angular-ui-bootstrap@^2.5.6:
 angular-ui-router-tabs@^2.0.2:
   version "2.0.2"
   resolved "http://registry.npm.taobao.org/angular-ui-router-tabs/download/angular-ui-router-tabs-2.0.2.tgz#e956b27dd81b530bec1a5fd1570d3f702d652c9f"
-
-angular-ui-router@^1.0.0:
-  version "1.0.3"
-  resolved "http://registry.npm.taobao.org/angular-ui-router/download/angular-ui-router-1.0.3.tgz#bf2494caae95c37cf01af3761d89747cfed2db45"
-  dependencies:
-    "@uirouter/core" "5.0.3"
 
 angular-ui-tree@^2.22.6:
   version "2.22.6"
@@ -1098,16 +1105,16 @@ caniuse-api@^2.0.0:
     lodash.uniq "^4.5.0"
 
 caniuse-db@^1.0.30000529, caniuse-db@^1.0.30000634, caniuse-db@^1.0.30000639:
-  version "1.0.30000789"
-  resolved "http://registry.npm.taobao.org/caniuse-db/download/caniuse-db-1.0.30000789.tgz#5cf3fec75480041ab162ca06413153141e234325"
+  version "1.0.30000790"
+  resolved "http://registry.npm.taobao.org/caniuse-db/download/caniuse-db-1.0.30000790.tgz#a8023e6eb9fe9c0ef3d60b4427ce104ea87d381c"
 
 caniuse-lite@1.0.30000697:
   version "1.0.30000697"
   resolved "http://registry.npm.taobao.org/caniuse-lite/download/caniuse-lite-1.0.30000697.tgz#125fb00604b63fbb188db96a667ce2922dcd6cdd"
 
 caniuse-lite@^1.0.0, caniuse-lite@^1.0.30000784, caniuse-lite@^1.0.30000789:
-  version "1.0.30000789"
-  resolved "http://registry.npm.taobao.org/caniuse-lite/download/caniuse-lite-1.0.30000789.tgz#2e3d937b267133f63635ef7f441fac66360fc889"
+  version "1.0.30000790"
+  resolved "http://registry.npm.taobao.org/caniuse-lite/download/caniuse-lite-1.0.30000790.tgz#c954cca780046f34c4b433d324ef419e1db51a53"
 
 cardinal@^1.0.0:
   version "1.0.0"
@@ -1312,7 +1319,11 @@ combined-stream@^1.0.5, combined-stream@~1.0.5:
   dependencies:
     delayed-stream "~1.0.0"
 
-commander@, commander@2.12.x, commander@^2.12.1, commander@^2.9.0, commander@~2.12.1:
+commander@, commander@^2.12.1, commander@^2.9.0:
+  version "2.13.0"
+  resolved "http://registry.npm.taobao.org/commander/download/commander-2.13.0.tgz#6964bca67685df7c1f1430c584f07d7597885b9c"
+
+commander@2.12.x, commander@~2.12.1:
   version "2.12.2"
   resolved "http://registry.npm.taobao.org/commander/download/commander-2.12.2.tgz#0f5946c427ed9ec0d91a46bb9def53e54650e555"
 
