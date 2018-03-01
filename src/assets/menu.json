@@ -1,0 +1,31 @@
+[
+    {
+        "title": "HOMEPAGE",
+        "iconfont": "index-icon",
+        "permissions": ["permitAll"],
+        "state": "main.home",
+        "active": "parent-active",
+        "routeMatch": "dryad.home",
+        "child": [],
+        "level": 1
+    },
+    {
+        "title": "COMPANIES_MANAGEMENT",
+        "iconfont": "system-icon",
+        "permissions": ["permitAll"],
+        "active": "parent-active",
+        "routeMatch": "main.company_manager.*.*",
+        "child": [
+            {
+                "title": "机构管理",
+                "permissions": ["permitAll"],
+                "state": "dryad.system.institutional-management.list.department",
+                "active": "child-active",
+                "routeMatch": "dryad.system.institutional-management.**",
+                "level": 2,
+                "child": []
+            }
+        ],
+        "level": 1
+    }
+]

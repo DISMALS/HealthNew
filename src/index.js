@@ -10,26 +10,26 @@ require('../node_modules/ng-verify/css/ngVerify.css');
 require('../node_modules/angular-block-ui/dist/angular-block-ui.min.css');
 
 
-const appModule = require('./app/common/lkapp.module.js');
-const appConfig = require('./app/app.config.js');
-const appRun = require('./app/app.run.js');
+const appModule = require('./app/common/lkapp.module');
+const appConfig = require('./app/app.config');
+const appRun = require('./app/app.run');
 const appService = require('./app/common/constant.service');
 const appRouter = require('./app/common/all.router');
+const appDirective = require('./app/common/base.directive');
+const appCtrl = require('./app/common/root.controller');  
 
 // 加载angular的配置文件以及初始运行的文件
 appRun(appModule);
 appConfig(appModule);
 
 
-//加载公共service、router
+//加载公共service、router、directive
 appService(appModule);
 appRouter(appModule);
+appDirective(appModule);
 
 //定义底层控制器
-appModule.controller('mainCtrl',['$rootScope','$scope',($rootScope,$scope) => {
-    console.log($rootScope);
-    console.log($scope);
-}]);
+appCtrl(appModule);
 
 //当文档加载完毕时注入angular模块
 angular.element(document).ready(function () {
